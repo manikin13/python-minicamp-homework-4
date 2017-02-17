@@ -1,0 +1,16 @@
+<table border="1">
+  <thead>
+    <td>Name</td>
+    <td>Format</td>
+    <td>Genre</td>
+  </thead>
+  {% for row in rows %}
+  <tr>
+    <td>{{row["name"]}}</td>
+    <td>{{row["mFormat"]}}</td>
+    <td>{{row["genre"]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<h3><a href="/">Movie Home</a></h3>
